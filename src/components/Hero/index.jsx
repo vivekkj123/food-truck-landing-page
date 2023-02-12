@@ -5,6 +5,7 @@ import {
   GridItem,
   Heading,
   Image,
+  Stack,
   Text,
 } from "@chakra-ui/react";
 import React from "react";
@@ -28,13 +29,26 @@ const Hero = () => {
         <Heading
           as={"h1"}
           fontFamily={"Source Sans Pro"}
+          fontWeight={700}
           fontSize={{
             base: "38px",
             md: "6xl",
           }}
           width={{
-            base: "auto",
+            base: "240px",
             md: "345px",
+          }}
+          marginX={{
+            base: "auto",
+            md: "0",
+          }}
+          textAlign={{
+            base: "center",
+            md: "left",
+          }}
+          lineHeight={{
+            base: "46px",
+            md: "69px",
           }}
           color="secondary"
           my={10}
@@ -49,29 +63,36 @@ const Hero = () => {
         <Text
           fontFamily={"Open Sans"}
           color={"textSecondary"}
-          marginX={{
-            base: "auto",
-            md: "0",
-          }}
           my={10}
           width={{
             base: "auto",
             md: "345px",
           }}
+          marginX={{
+            base: "auto",
+            md: "0",
+          }}
+          textAlign={{
+            base: "center",
+            md: "left",
+          }}
         >
           Naturally made Healthcare Products for the better care & support of
           your body.
         </Text>
-        <Button
-          padding={"8"}
-          fontWeight={700}
-          fontFamily={"Open Sans"}
-          borderRadius="34"
-          color={"white"}
-          backgroundColor={"primary"}
-        >
-          Explore Now
-        </Button>
+        <Stack align={{ base: "center", md: "start" }}>
+          <Button
+            paddingY={"12px"}
+            paddingX={"30px"}
+            fontWeight={700}
+            fontFamily={"Open Sans"}
+            borderRadius="34"
+            color={"white"}
+            backgroundColor={"primary"}
+          >
+            Explore Now
+          </Button>
+        </Stack>
       </GridItem>
       <GridItem
         gridRow={{
