@@ -50,6 +50,7 @@ const ArticleCard = ({ title, description, image }) => {
           fontFamily={"Source Sans Pro"}
           color={"textSecondary"}
           rounded={"full"}
+          width={['full','fit-content']}
         >
           Read More
         </Button>
